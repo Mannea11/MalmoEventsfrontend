@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.event-detail-container {
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Lato', sans-serif; 
+    margin-left: calc((100% - 1000px) / 2 + 250px); 
+}
+
+.event-detail-container h2 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.event-detail-container img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.event-detail-container p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.event-detail-container p.expanded {
+    white-space: initial;
+    overflow: visible;
+}
+
+.event-detail-container .event-details-box {
+    background-color: #000; 
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.back-button, .buy-ticket-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; 
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px; 
+    transition: background-color 0.3s;
+}
+
+.back-button:hover, .buy-ticket-link:hover {
+    background-color: #207cb8;
+}
+
+.read-more-link {
+    color: #3498db;
+    cursor: pointer;
+}
+
+.read-more-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+    .event-detail-container {
+        width: 90%;
+        margin-left: 5%; 
+    }
+
+    .event-detail-container h2 {
+        font-size: 24px;
+    }
+
+    .event-detail-container p {
+        font-size: 16px;
+    }
+
+    .back-button, .buy-ticket-link {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-detail-container {
+        margin-left: 0;
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .event-detail-container h2, .event-detail-container p {
+        font-size: 20px;
+    }
+
+    .back-button, .buy-ticket-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .event-detail-container p {
+        font-size: 14px;
+        white-space: normal; 
+        overflow: visible;
+        text-overflow: clip;
+    }
+
+    .event-detail-container h2 {
+        font-size: 18px;
+    }
+}
